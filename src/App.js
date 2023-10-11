@@ -4,13 +4,13 @@ import TodoInput from './components/TodoInput';
 import Todolist from './components/TodoList';
 
 function App() {
-  // Load todo list from local storage or initialize it as an empty array
+  
   const [listTodo, setListTodo] = useState(() => {
     const storedTodoList = localStorage.getItem('todoList');
     return storedTodoList ? JSON.parse(storedTodoList) : [];
   });
 
-  // Save todo list to local storage whenever it changes
+  
   useEffect(() => {
     localStorage.setItem('todoList', JSON.stringify(listTodo));
   }, [listTodo]);
