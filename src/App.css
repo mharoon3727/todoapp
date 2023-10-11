@@ -59,12 +59,13 @@
   align-items: center;
   margin-top: 5px;
 }
+
 .list-item {
   list-style-type: none;
   background-color: #596e8b;
   border: 2px solid rgb(161, 158, 158);
   color: white;
-  padding: 8px;
+  padding: 8.5px;
   border-radius: 5px;
   min-height: 30px;
   display: flex;
